@@ -1,5 +1,5 @@
 body {
-    background: url('https://fondosmil.com/fondo/455.png') fixed center;
+    background: url('https://images8.alphacoders.com/102/thumb-1920-1022231.png') fixed center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -10,6 +10,10 @@ body {
 
 .bg-opacity {
     background-color: rgba(0, 0, 0, 0.397);
+}
+
+.bg-opacity-2 {
+    background-color: rgba(0, 0, 0, 0.671);
 }
 
 @keyframes animatedBackground {
@@ -38,6 +42,10 @@ body {
 
 .bg-dark-3 {
     background-color: rgb(29, 30, 36);
+}
+
+.bg-dark-4 {
+    background-color: rgb(0, 0, 0);
 }
 
 .mc-animate-area {
