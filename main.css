@@ -1,6 +1,7 @@
 body {
-    background-image: url('https://fondosmil.com/fondo/455.png');
-    background-attachment: fixed;
+    background: url('https://fondosmil.com/fondo/455.png') fixed center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title-opacity {
