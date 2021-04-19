@@ -1,0 +1,61 @@
+body {
+    background-image: url('https://fondosmil.com/fondo/455.png');
+    background-attachment: fixed;
+}
+
+.title-opacity {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(29, 30, 36));
+}
+
+.bg-opacity {
+    background-color: rgba(0, 0, 0, 0.397);
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}
+
+
+@keyframes spinMe {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.bg-dark-2 {
+    background-color: rgb(25, 26, 43);
+}
+
+.bg-dark-3 {
+    background-color: rgb(29, 30, 36);
+}
+
+.mc-animate-area {
+    background: url(https://i.pinimg.com/originals/24/e7/59/24e75930a8f463192dadb16fe58bdf29.jpg) repeat-x bottom;
+    animation: animatedBackground 40s linear infinite;
+}
+
+.tf2-animate-area {
+    background-position-y: 90% !important;
+    background: url(https://i.pinimg.com/originals/ff/4e/ac/ff4eac0c9be1004637fa4b3926abaeab.png) repeat-x top;
+    animation: animatedBackground 40s linear infinite;
+}
+
+.pyp-animate-area {
+    background-position-y: 40% !important;
+    background: url(https://wallpaperaccess.com/full/660387.png) repeat-x top;
+    animation: animatedBackground 40s linear infinite;
+}
+
+.spin {
+    animation: spinMe 30s linear infinite;
+}
