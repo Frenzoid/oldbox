@@ -100,7 +100,7 @@ body {
 }
 
 .spin-mega-fast {
-    animation: spinMe 0.1s linear infinite;
+    animation: spinMe 0.01s linear infinite;
 }
 
 .spin {
