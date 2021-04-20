@@ -95,16 +95,21 @@ body {
     animation: animatedBackground 40s ease infinite;
 }
 
+
 .spin {
     animation: spinMe 30s linear infinite;
 }
 
 .spin-mega-fast {
-    animation: spinMe 0.01s linear infinite;
+    animation: spinMe 0.05s linear infinite;
 }
 
-.spin {
-    animation: spinMe 30s linear infinite;
+.spin:hover {
+    animation-play-state: paused;
+}
+
+.spin-mega-fast:hover {
+    animation-play-state: paused;
 }
 
 /* width */
