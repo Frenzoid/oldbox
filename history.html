@@ -138,10 +138,10 @@
                 <div class="card bg-dark-3 m-1" style="width: 22rem;">
                     <div class="card-header text-danger">
                         <img style="width: 60px;" class="spin-mega-fast border border-danger mr-2 mt-2"
-                            src="./assets/jawiscriptavatar.png" />
+                            src="./assets/jawiscriptavatar.png" onmouseover="onMouseOver()" onmouseout="onMouseOut()" />
                         Jawiscript
                     </div>
-                    <div class="card-body text-danger text-center font-italic">
+                    <div id="jwsc-card-body" class="card-body text-danger text-center font-italic">
                         Help me, my head is spinning!!!
                     </div>
                     <div class="card-footer">
@@ -157,6 +157,18 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- Requested by Jawiscript -->
+                <script>
+                    function onMouseOver() {
+                        document.getElementById("jwsc-card-body").innerText = "Thank you!";
+                    }
+
+                    function onMouseOut() {
+                        document.getElementById("jwsc-card-body").innerText = "Nooo don't let me gooo!!!!";
+
+                    }
+                </script>
 
                 <div class="card bg-dark-2 m-1 " style="width: 22rem;">
                     <div class="card-header text-warning">
