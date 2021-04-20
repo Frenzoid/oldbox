@@ -99,6 +99,13 @@ body {
     animation: spinMe 30s linear infinite;
 }
 
+.spin-mega-fast {
+    animation: spinMe 0.1s linear infinite;
+}
+
+.spin {
+    animation: spinMe 30s linear infinite;
+}
 
 /* width */
 ::-webkit-scrollbar {
