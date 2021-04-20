@@ -23,6 +23,19 @@ body {
     }
 }
 
+@keyframes animatedBackground-reverse {
+    0% {
+        background-position: 100% 0;
+    }
+
+    50% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
 
 @keyframes spinMe {
     from {
@@ -46,20 +59,21 @@ body {
 }
 
 .mc-animate-area {
-    background: url('./assets/mcbg.jpg') repeat-x bottom;
-    animation: animatedBackground 80s linear infinite;
+    background-position-y: 65% !important;
+    background: url('./assets/mcbg.png') repeat-x bottom;
+    animation: animatedBackground 80s ease infinite;
 }
 
 .tf2-animate-area {
-    background-position-y: 90% !important;
-    background: url('./assets/tf2bg.png') repeat-x top;
-    animation: animatedBackground 40s linear infinite;
+    background-position-y: 40% !important;
+    background: url('./assets/tf2bg.jpg') repeat-x top;
+    animation: animatedBackground-reverse 80s ease infinite;
 }
 
 .pyp-animate-area {
     background-position-y: 50% !important;
     background: url('./assets/pypbg.png') repeat-x top;
-    animation: animatedBackground 40s linear infinite;
+    animation: animatedBackground 40s ease infinite;
 }
 
 .spin {
