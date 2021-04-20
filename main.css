@@ -102,14 +102,23 @@ body {
 }
 
 
+
 @media (min-width: 300px) {
     .hide-mobile {
         display: none;
+    }
+
+    body {
+        font-size: 75%;
     }
 }
 
 @media (min-width: 768px) {
     .hide-mobile {
         display: initial;
+    }
+
+    body {
+        font-size: initial;
     }
 }
