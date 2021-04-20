@@ -103,7 +103,7 @@ body {
 
 
 
-@media (min-width: 300px) {
+@media (min-width: 100px) {
     .hide-mobile {
         display: none;
     }
