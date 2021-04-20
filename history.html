@@ -204,9 +204,12 @@
                     frenzcard = document.getElementById("frnz-card");
 
                     frenzcard.getElementsByTagName("img")[0].onmouseover = () => {
-                        frenzcard.getElementsByClassName("card-body")[0].innerText += " 🍣";
+                        frenzcard.getElementsByClassName("card-body")[0].innerText += "🍣";
                     }
 
+                    frenzcard.getElementsByTagName("img")[0].onmouseout = () => {
+                        frenzcard.getElementsByClassName("card-body")[0].innerText += "🍣";
+                    }
                 </script>
 
                 <div class="card bg-dark m-1" style="width: 22rem;">
