@@ -77,6 +77,10 @@ body {
     background-color: rgb(29, 30, 36);
 }
 
+.bg-dark-4 {
+    background-color: #220246;
+}
+
 .mc-animate-area {
     background-position-y: 65% !important;
     background: url('./assets/mcbg.png') repeat-x bottom;
