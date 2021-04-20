@@ -171,7 +171,7 @@
                     }
                 </script>
 
-                <div class="card bg-dark-2 m-1 " style="width: 22rem;">
+                <div class="card bg-dark-2 m-1 " style="width: 22rem;" id="frnz-card">
                     <div class="card-header text-warning">
                         <img style="width: 60px;" class="spin border border-warning mr-2 mt-2"
                             src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/3c/3cdfffc538022db7cb644c34fac6a78102b2204c_full.jpg" />
@@ -198,6 +198,19 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- My custom animations :D -->
+                <script>
+                    frenzcard = document.getElementById("frnz-card");
+
+                    frenzcard.getElementsByTagName("img")[0].onmouseover = () => {
+                        frenzcard.getElementsByClassName("card-body")[0].innerText += "🍣";
+                    }
+
+                    frenzcard.getElementsByTagName("img")[0].onmouseout = () => {
+                        frenzcard.getElementsByClassName("card-body")[0].innerText = "SUSHIIIIIII";
+                    }
+                </script>
 
                 <div class="card bg-dark m-1" style="width: 22rem;">
                     <div class="card-header text-primary">
