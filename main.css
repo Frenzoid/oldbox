@@ -4,10 +4,25 @@ body {
     background-size: cover;
 }
 
-.title-opacity {
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(29, 30, 36));
+@media (min-width: 100px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    body {
+        font-size: 75%;
+    }
 }
 
+@media (min-width: 768px) {
+    .hide-mobile {
+        display: initial;
+    }
+
+    body {
+        font-size: initial;
+    }
+}
 
 @keyframes animatedBackground {
     0% {
@@ -44,6 +59,10 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+.title-opacity {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(29, 30, 36));
 }
 
 .bg-opacity {
@@ -99,26 +118,4 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #007bff;
-}
-
-
-
-@media (min-width: 100px) {
-    .hide-mobile {
-        display: none;
-    }
-
-    body {
-        font-size: 75%;
-    }
-}
-
-@media (min-width: 768px) {
-    .hide-mobile {
-        display: initial;
-    }
-
-    body {
-        font-size: initial;
-    }
 }
