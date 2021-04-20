@@ -100,3 +100,16 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #007bff;
 }
+
+
+@media (min-width: 576px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .hide-mobile {
+        display: initial;
+    }
+}
