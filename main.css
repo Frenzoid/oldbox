@@ -135,3 +135,19 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #007bff;
 }
+
+@font-face {
+    font-family: "SF Compact Display";
+    src: url("//db.onlinewebfonts.com/t/23c8ec0d7b298e340b59bd32a7e661f3.eot");
+    src: url("//db.onlinewebfonts.com/t/23c8ec0d7b298e340b59bd32a7e661f3.eot?#iefix")
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/23c8ec0d7b298e340b59bd32a7e661f3.woff2")
+    format("woff2"), url("//db.onlinewebfonts.com/t/23c8ec0d7b298e340b59bd32a7e661f3.woff")
+    format("woff"), url("//db.onlinewebfonts.com/t/23c8ec0d7b298e340b59bd32a7e661f3.ttf")
+    format("truetype"), url("//db.onlinewebfonts.com/t/23c8ec0d7b298e340b59bd32a7e661f3.svg#SF Compact Display")
+    format("svg");
+}
+
+.font-family-sfc {
+    font-family: "SF Compact Display";
+    font-size: 4rem;
+}
