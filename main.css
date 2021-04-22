@@ -81,16 +81,32 @@ body {
     background-color: #220246;
 }
 
+.text-dark-2 {
+    color: rgb(25, 26, 43);
+}
+
+.text-dark-3 {
+    color: rgb(29, 30, 36);
+}
+
+.text-dark-4 {
+    color: #220246;
+}
+
+.text-orange {
+    color: #ff8800;
+}
+
 .mc-animate-area {
     background-position-y: 65% !important;
     background: url('./assets/mcbg.png') repeat-x bottom;
-    animation: animatedBackground 80s ease infinite;
+    animation: animatedBackground 80s ease-in-out infinite;
 }
 
 .tf2-animate-area {
     background-position-y: 40% !important;
     background: url('./assets/tf2bg.jpg') repeat-x top;
-    animation: animatedBackground-reverse 80s ease infinite;
+    animation: animatedBackground-reverse 80s ease-in-out infinite;
 }
 
 .pyp-animate-area {
@@ -98,7 +114,6 @@ body {
     background: url('./assets/pypbg.png') repeat-x top;
     animation: animatedBackground 40s ease infinite;
 }
-
 
 .spin {
     animation: spinMe 30s linear infinite;
