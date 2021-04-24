@@ -9,8 +9,18 @@ body {
         display: none;
     }
 
+    .hide-medium {
+        display: none;
+    }
+
     body {
         font-size: 75%;
+    }
+}
+
+@media (min-width: 992px) {
+    .hide-medium {
+        display: initial;
     }
 }
 
