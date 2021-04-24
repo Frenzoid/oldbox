@@ -159,6 +159,11 @@
                                     Steam Profile
                                 </a>
                             </li>
+                            <li>
+                                <a class="text-primary text-decoration-none ">
+                                    Discord: Jawiscript#3096
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -166,13 +171,14 @@
                 <!-- Requested by Jawiscript -->
                 <script>
                     jwsccard = document.getElementById("jwsc-card");
+                    myheadisspinningBanner = jwsccard.getElementsByClassName("card-body")[0];
 
                     jwsccard.getElementsByTagName("img")[0].onmouseover = () => {
-                        jwsccard.getElementsByClassName("card-body")[0].innerText = "Thank you!";
+                        myheadisspinningBanner.innerText = "Thank you!";
                     }
 
                     jwsccard.getElementsByTagName("img")[0].onmouseout = () => {
-                        jwsccard.getElementsByClassName("card-body")[0].innerText = "Nooo don't let me gooo!!!!";
+                        myheadisspinningBanner.innerText = "Nooo don't let me gooo!!!!";
                     }
                 </script>
 
@@ -185,19 +191,22 @@
                     <div class="card-body text-warning text-center font-italic">
                         A sushi addict.
                     </div>
+                    <div class="p-3" id="sushi-roll">
+
+                    </div>
                     <div class="card-footer">
                         <div class="text-info">
                             Contact means:
                         </div>
                         <ul>
                             <li>
-                                <a href="https://steamcommunity.com/id/MrFren/">
-                                    Steam Profile
+                                <a href="mailto:frenzoid@pm.me">
+                                    Email: frenzoid@pm.me <span class="text-warning">( preferred )</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:frenzoid@pm.me">
-                                    Email: frenzoid@pm.me
+                                <a href="https://steamcommunity.com/id/MrFren/">
+                                    Steam Profile
                                 </a>
                             </li>
                         </ul>
@@ -206,15 +215,29 @@
 
                 <!-- My custom animations :D -->
                 <script>
+                    function getRandomInt(min, max) {
+                        return Math.floor(Math.random() * (max - min)) + min;
+                    }
+
+                    function generateSushiDiv() {
+                        sushiType = getRandomInt(0, 2) == 1 ? "🍤" : "🍣";
+                        sushiSize = getRandomInt(50, 200);
+
+                        return `<span style="font-size: ${sushiSize}%">${sushiType}</span>`;
+                    }
+
+
                     frenzcard = document.getElementById("frnz-card");
+                    sushiRoll = document.getElementById("sushi-roll");
 
                     frenzcard.getElementsByTagName("img")[0].onmouseover = () => {
-                        frenzcard.getElementsByClassName("card-body")[0].innerText += "🍣";
+                        sushiRoll.innerHTML += generateSushiDiv();
                     }
 
                     frenzcard.getElementsByTagName("img")[0].onmouseout = () => {
-                        frenzcard.getElementsByClassName("card-body")[0].innerText += "🍤";
+                        sushiRoll.innerHTML += generateSushiDiv();
                     }
+
                 </script>
 
                 <div class="card bg-dark-4 m-1" style="width: 22rem;">
@@ -233,7 +256,7 @@
                         <ul>
                             <li>
                                 <a class="text-primary text-decoration-none ">
-                                    Discord: Nezzie#7418 (preferred)
+                                    Discord: Nezzie#7418 <span class="text-warning">( preferred )</span>
                                 </a>
                             </li>
                             <li>
@@ -248,7 +271,7 @@
         </div>
     </div>
 
-    <footer class="fixed-bottom footer pt-2 bg-dark-3">
+    <footer class="fixed-bottom footer pt-2 bg-dark-3 user-select-none">
         <div class="container">
             <p class="text-muted text-center m-0 mb-2">© Oldbox 2021 All rights reserved.</p>
         </div>
