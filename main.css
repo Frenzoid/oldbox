@@ -9,12 +9,8 @@ body {
         display: none;
     }
 
-    .adapt-mobile {
-        padding: 4px;
-    }
-
-    .hide-medium {
-        display: none;
+    .show-mobile {
+        display: initial;
     }
 
     body {
@@ -24,22 +20,16 @@ body {
 
 @media (min-width: 768px) {
 
-    .adapt-mobile {
-        padding: initial;
-    }
-
     .hide-mobile {
         display: initial;
     }
 
+    .show-mobile {
+        display: none;
+    }
+
     body {
         font-size: initial;
-    }
-}
-
-@media (min-width: 992px) {
-    .hide-medium {
-        display: initial;
     }
 }
 

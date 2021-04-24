@@ -104,7 +104,7 @@
                     <div class="m-1" style="width: 35%">
                         Gamemode: Tags
                     </div>
-                    <div class="m-1" style="width: 25%">
+                    <div class="m-1 text-center" style="width: 25%">
                         Address
                     </div>
                     <div class="m-1" style="width: 15%">
@@ -125,12 +125,12 @@
                         <span class="text-warning">Survival</span>: claims, tpa, sethome, pvp, whitelist
                     </div>
                     <div class="m-1 text-primary d-flex flex-row justify-content-start" style="width: 25%;">
-                        <div class="text-break mr-1" style="width: 70%;">
+                        <div onclick="copyAddress('svmc.oldbox.cloud')"
+                            class="btn btn-dark p-0 user-select-none hide-mobile" style="cursor: pointer; width: 100%;">
                             svmc.oldbox.cloud
                         </div>
-                        <div onclick="copyAddress('svmc.oldbox.cloud')" class="btn btn-dark p-0  hide-medium"
-                            style="cursor: pointer; width: 25%;">
-                            📋
+                        <div class="m-1 text-primary show-mobile">
+                            svmc.oldbox.cloud
                         </div>
                     </div>
                     <div class="m-1" style="width: 15%">
@@ -151,12 +151,12 @@
                         <span class="text-warning">RLCraft</span>: sethome, tpa, pvp
                     </div>
                     <div class="m-1 text-primary d-flex flex-row justify-content-start" style="width: 25%;">
-                        <div class="text-break mr-1" style="width: 70%;">
+                        <div onclick="copyAddress('rlmcus.oldbox.cloud')"
+                            class="btn btn-dark p-0 user-select-none hide-mobile" style="cursor: pointer; width: 100%;">
                             rlmcus.oldbox.cloud
                         </div>
-                        <div onclick="copyAddress('rlmcus.oldbox.cloud')" class="btn btn-dark p-0 hide-medium"
-                            style="cursor: pointer; width: 25%;">
-                            📋
+                        <div class="m-1 text-primary show-mobile">
+                            rlmcus.oldbox.cloud
                         </div>
                     </div>
                     <div class="m-1" style="width: 15%">
@@ -185,7 +185,7 @@
                     <div class="m-1" style="width: 35%">
                         Gamemode: Tags
                     </div>
-                    <div class="m-1" style="width: 25%">
+                    <div class="m-1 text-center" style="width: 25%">
                         Address
                     </div>
                     <div class="m-1" style="width: 15%">
@@ -206,12 +206,12 @@
                         <span class="text-warning">FF2</span>: shop, ks, votes, halloween, event
                     </div>
                     <div class="m-1 text-primary d-flex flex-row justify-content-start" style="width: 25%;">
-                        <div class="text-break mr-1" style="width: 70%;">
+                        <div onclick="joinSteamServer('tf2ff2us.oldbox.cloud')"
+                            class="btn btn-dark p-0 user-select-none hide-mobile" style="cursor: pointer; width: 100%;">
                             tf2ff2us.oldbox.cloud
                         </div>
-                        <div onclick="joinSteamServer('tf2ff2us.oldbox.cloud')" class="btn btn-dark p-0 hide-medium"
-                            style="cursor: pointer; width: 25%;">
-                            🎮
+                        <div class="m-1 text-primary show-mobile">
+                            tf2ff2us.oldbox.cloud
                         </div>
                     </div>
                     <div class="m-1" style="width: 15%">
@@ -230,7 +230,6 @@
     </div>
 
     <script>
-
         function joinSteamServer(address, port) {
             document.location = `steam://connect/${address}:${port}`;
         }
