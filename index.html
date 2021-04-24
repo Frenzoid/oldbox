@@ -125,9 +125,10 @@
                         <span class="text-warning">Survival</span>: claims, tpa, sethome, pvp, whitelist
                     </div>
                     <div class="m-1 text-primary d-flex flex-row justify-content-between" style="width: 25%;">
-                        <div>svmc.oldbox.cloud</div>
-                        <div onclick="copyAddressTpClipboard('svmc.oldbox.cloud')" class="btn btn-dark p-0 hide-medium"
-                            style="cursor: pointer; width: 25%;">➡️📋</div>
+                        <div class="text-break">svmc.oldbox.cloud</div>
+                        <div onclick="copyAddressToClipboard('svmc.oldbox.cloud')" class="btn btn-dark p-0  hide-medium"
+                            style="cursor: pointer; width: 25%;">➡️📋
+                        </div>
                     </div>
                     <div class="m-1" style="width: 15%">
                         EU, Germany
@@ -147,8 +148,8 @@
                         <span class="text-warning">RLCraft</span>: sethome, tpa, pvp
                     </div>
                     <div class="m-1 text-primary d-flex flex-row justify-content-between" style="width: 25%;">
-                        <div>rlmcus.oldbox.cloud</div>
-                        <div onclick="copyAddressTpClipboard('rlmcus.oldbox.cloud')"
+                        <div class="text-break">rlmcus.oldbox.cloud</div>
+                        <div onclick="copyAddressToClipboard('rlmcus.oldbox.cloud')"
                             class="btn btn-dark p-0 hide-medium" style="cursor: pointer; width: 25%;">➡️📋</div>
                     </div>
                     <div class="m-1" style="width: 15%">
@@ -198,7 +199,7 @@
                         <span class="text-warning">FF2</span>: shop, ks, votes, halloween, event
                     </div>
                     <div class="m-1 text-primary d-flex flex-row justify-content-between" style="width: 25%;">
-                        <div>tf2ff2us.oldbox.cloud</div>
+                        <div class="text-break">tf2ff2us.oldbox.cloud</div>
                         <div onclick="connectToSteamGameServer('tf2ff2us.oldbox.cloud','27015')"
                             class="btn btn-dark p-0 hide-medium" style="cursor: pointer; width: 25%;">➡️🎮</div>
                     </div>
@@ -223,7 +224,7 @@
             document.location = `steam://connect/${address}:${port}`;
         }
 
-        function copyAddressTpClipboard(data) {
+        function copyAddressToClipboard(data) {
             toastr.options = {
                 preventDuplicates: true,
                 timeOut: 4000,
