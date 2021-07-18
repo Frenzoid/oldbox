@@ -1,5 +1,5 @@
 body {
-    background: url('./assets/bg2.jpg') fixed center;
+    background: url('./assets/bg2.webp') fixed center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -124,19 +124,19 @@ body {
 
 .mc-animate-area {
     background-position-y: 65% !important;
-    background: url('./assets/mcbg.png') repeat-x bottom;
+    background: url('./assets/mcbg.webp') repeat-x bottom;
     animation: animatedBackground 80s ease-in-out infinite;
 }
 
 .tf2-animate-area {
     background-position-y: 40% !important;
-    background: url('./assets/tf2bg.jpg') repeat-x top;
+    background: url('./assets/tf2bg.webp') repeat-x top;
     animation: animatedBackground-reverse 80s ease-in-out infinite;
 }
 
 .pyp-animate-area {
     background-position-y: 50% !important;
-    background: url('./assets/pypbg.png') repeat-x top;
+    background: url('./assets/pypbg.webp') repeat-x top;
     animation: animatedBackground 40s ease infinite;
 }
 
