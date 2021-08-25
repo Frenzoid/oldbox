@@ -1,77 +1,15 @@
+/* PRIMARY TAGS*/
 body {
-    background: url('./assets/bg2.webp') fixed center;
+    background: url('../assets/images/bgimages/bg.webp') fixed center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-@media (min-width: 100px) {
-    .hide-mobile {
-        display: none;
-    }
 
-    .show-mobile {
-        display: initial;
-    }
-
-    body {
-        font-size: 68%;
-    }
-}
-
-@media (min-width: 768px) {
-
-    .hide-mobile {
-        display: initial;
-    }
-
-    .show-mobile {
-        display: none;
-    }
-
-    body {
-        font-size: initial;
-    }
-}
-
-
-
-
-
-@keyframes animatedBackground {
-    0% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 100% 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
-}
-
-@keyframes animatedBackground-reverse {
-    0% {
-        background-position: 100% 0;
-    }
-
-    50% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: 100% 0;
-    }
-}
-
-@keyframes spinMe {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* CUSTOM CLASSES */
+.font-family-sfc {
+    font-family: "SF Compact Display";
+    font-size: 4rem;
 }
 
 .title-opacity {
@@ -124,19 +62,19 @@ body {
 
 .mc-animate-area {
     background-position-y: 65% !important;
-    background: url('./assets/mcbg.webp') repeat-x bottom;
+    background: url('../assets/images/bgimages/mcbg.webp') repeat-x bottom;
     animation: animatedBackground 80s ease-in-out infinite;
 }
 
 .tf2-animate-area {
     background-position-y: 40% !important;
-    background: url('./assets/tf2bg.webp') repeat-x top;
+    background: url('../assets/images/bgimages/tf2bg.webp') repeat-x top;
     animation: animatedBackground-reverse 80s ease-in-out infinite;
 }
 
 .pyp-animate-area {
     background-position-y: 50% !important;
-    background: url('./assets/pypbg.webp') repeat-x top;
+    background: url('../assets/images/bgimages/pypbg.webp') repeat-x top;
     animation: animatedBackground 40s ease infinite;
 }
 
@@ -156,6 +94,8 @@ body {
     animation-play-state: paused;
 }
 
+
+/* SCROLL BAR*/
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -176,6 +116,8 @@ body {
   background: #007bff;
 }
 
+
+/* @s*/
 @font-face {
     font-family: "SF Compact Display";
     src: url("//db.onlinewebfonts.com/t/23c8ec0d7b298e340b59bd32a7e661f3.eot");
@@ -187,7 +129,69 @@ body {
     format("svg");
 }
 
-.font-family-sfc {
-    font-family: "SF Compact Display";
-    font-size: 4rem;
+
+@media (min-width: 100px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    .show-mobile {
+        display: initial;
+    }
+
+    body {
+        font-size: 68%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .hide-mobile {
+        display: initial;
+    }
+
+    .show-mobile {
+        display: none;
+    }
+
+    body {
+        font-size: initial;
+    }
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes animatedBackground-reverse {
+    0% {
+        background-position: 100% 0;
+    }
+
+    50% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes spinMe {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
